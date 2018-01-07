@@ -16,6 +16,12 @@ Run following command in terminal/cmd
 
 This will install octobercms.
 
+run command:
+
+`composer update'
+
+in commandline
+
 Open http://localhost/bkpune in browser and complete rest of the installation steps.
 
 Go to plugins folder and clone this repo folder there.
