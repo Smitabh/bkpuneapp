@@ -1,0 +1,19 @@
+{
+    "name": "iocare/bkpunewebservice",
+    "description": "BK Pune Web Service",
+    "homepage": "https://www.iocare.in",
+    "keywords": ["bkpuneapp", "brahmakumaris","mountabu","php","ionic","webservice"],
+    "authors": [
+        {
+            "name": "Rajendra Khope",
+            "email": "research@iocare.in"
+        },
+        {
+            "name": "Smita Bhagwat",
+            "email": "smita5cool@gmail.com"
+        }
+    ],
+    "require": {
+        "bacon/bacon-qr-code": "dev-master"
+    }
+}
