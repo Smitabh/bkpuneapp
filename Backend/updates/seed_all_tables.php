@@ -9,7 +9,7 @@ class SeedAllTables extends Seeder
 
     public function run()
     {
-        //CT','MRI','Ultrasound','Doppler
+        //
     }
 
 }

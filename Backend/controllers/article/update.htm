@@ -1,0 +1,52 @@
+<?php
+$renderer = new \BaconQrCode\Renderer\Image\Png();
+$renderer->setHeight(512);
+$renderer->setWidth(512);
+$renderer->setMargin(0);
+$writer = new \BaconQrCode\Writer($renderer);
+$original_data = $formModel -> original['id'];
+$data = $writer->writeString($original_data);
+$data = "data:image/png;base64,".base64_encode($data);
+?>
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('iocare/bkpunewebservice/article') ?>">Article</a></li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?php if (!$this->fatalError): ?>
+
+    <?= Form::open(['class'=>'layout']) ?>
+
+        <div class="layout-row">
+           <img alt="$original_data" title="$original_data" src="<?= $data ?>"/>
+        </div>
+
+        <div class="form-buttons">
+            <div class="loading-indicator-container">
+                <a href="<?= Backend::url('iocare/bkpunewebservice/article') ?>">
+                  <button
+                      type="button"
+                      class="btn btn-default">
+                      Go Back
+                  </button>
+                </a>
+                <button
+                    type="button"
+                    class="oc-icon-trash-o btn-icon danger pull-right"
+                    data-request="onDelete"
+                    data-load-indicator="Deleting Article..."
+                    data-request-confirm="Do you really want to delete this Article?">
+                </button>
+            </div>
+        </div>
+
+    <?= Form::close() ?>
+
+<?php else: ?>
+
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+    <p><a href="<?= Backend::url('iocare/bkpunewebservice/article') ?>" class="btn btn-default">Return to Article list</a></p>
+
+<?php endif ?>

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Article
+
+# Model Form Field configuration
+form: $/iocare/bkpunewebservice/models/article/fields.yaml
+
+# Model Class name
+modelClass: Iocare\BkpuneWebservice\Models\Article
+
+# Default redirect location
+defaultRedirect: iocare/bkpunewebservice/Article
+
+# Create page
+create:
+    title: Create Article
+    redirect: iocare/bkpunewebservice/article/update/:id
+    redirectClose: iocare/bkpunewebservice/article
+
+# Update page
+update:
+    title: Edit Article
+    redirect: iocare/bkpunewebservice/article
+    redirectClose: iocare/bkpunewebservice/article
+
+# Preview page
+preview:
+    title: Preview Article

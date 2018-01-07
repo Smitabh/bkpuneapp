@@ -1,0 +1,16 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: Unique ID
+        searchable: true
+
+    type:
+        label: Type of article
+        searchable: true
+
+    article_id:
+        label: article ID
+        searchable: true

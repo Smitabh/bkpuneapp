@@ -1,11 +1,11 @@
-<?php namespace Mohsin\MediScan;
+<?php namespace Iocare\BkpuneWebservice;
 
 use Event;
 use Backend;
 use System\Classes\PluginBase;
 
 /**
- * MediScan Plugin Information File
+ * BkpuneWebservice Plugin Information File
  */
 class Plugin extends PluginBase
 {
@@ -20,10 +20,10 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'MediScan',
-            'description' => 'The online medical prop repository',
-            'author'      => 'Mohsin',
-            'icon'        => 'icon-medkit'
+            'name'        => 'BkpuneWebservice',
+            'description' => 'The online Bkpune App Webservice',
+            'author'      => 'Rajendra, Smita',
+            'icon'        => 'icon-leaf'
         ];
     }
 
@@ -31,29 +31,29 @@ class Plugin extends PluginBase
     {
         return [
             'mediscan' => [
-                'label'       => 'Props',
-                'url'         => Backend::url('mohsin/mediscan/patient'),
-                'icon'        => 'icon-stethoscope',
-                'permissions' => ['mohsin.mediscan.*'],
+                'label'       => 'Centers',
+                'url'         => Backend::url('Iocare/bkpunewebservice/centers'),
+                'icon'        => 'icon-home',
+                'permissions' => ['iocare.bkpunewebservice.*'],
                 'order'       => 500,
                 'sideMenu' => [
-                  'patient' => [
-                      'label'       => 'Patients',
-                      'icon'        => 'icon-wheelchair',
-                      'url'         => Backend::url('mohsin/mediscan/patient'),
-                      'permissions' => ['mohsin.mediscan.patients'],
+                  'centers' => [
+                      'label'       => 'Centers',
+                      'icon'        => 'icon-home',
+                      'url'         => Backend::url('Iocare/bkpunewebservice/centers'),
+                      'permissions' => ['iocare.bkpunewebservice.centers'],
                   ],
-                  'scan' => [
-                      'label'       => 'Scans',
+                  'article' => [
+                      'label'       => 'Article',
                       'icon'        => 'icon-clipboard',
-                      'url'         => Backend::url('mohsin/mediscan/scan'),
-                      'permissions' => ['mohsin.mediscan.scans'],
+                      'url'         => Backend::url('Iocare/bkpunewebservice/article'),
+                      'permissions' => ['iocare.bkpunewebservice.article'],
                   ],
-                  'prop' => [
-                      'label'       => 'Props',
+                  'addtype' => [
+                      'label'       => 'Center Type',
                       'icon'        => 'icon-list-alt',
-                      'url'         => Backend::url('mohsin/mediscan/prop'),
-                      'permissions' => ['mohsin.mediscan.props'],
+                      'url'         => Backend::url('Iocare/bkpunewebservice/centertype'),
+                      'permissions' => ['iocare.bkpunewebservice.centertype'],
                   ],
                 ]
             ]

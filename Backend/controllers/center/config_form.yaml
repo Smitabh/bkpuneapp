@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Center
+
+# Model Form Field configuration 
+form: $/iocare/bkpunewebservice/models/center/fields.yaml
+
+# Model Class name
+modelClass: Mohsin\MediScan\Models\Center
+
+# Default redirect location
+defaultRedirect: iocare/bkpunewebservice/center
+
+# Create page
+create:
+    title: Create Center
+    redirect: iocare/bkpunewebservice/center/update/:id
+    redirectClose: iocare/bkpunewebservice/center
+
+# Update page
+update:
+    title: Edit Center
+    redirect: iocare/bkpunewebservice/center
+    redirectClose: iocare/bkpunewebservice/center
+
+# Preview page
+preview:
+    title: Preview Center

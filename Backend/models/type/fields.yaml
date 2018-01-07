@@ -1,0 +1,18 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    type:
+        label: Type
+        commentAbove: Type.
+        type: dropdown
+
+    specs:
+        label: Specification
+        commentAbove: About.
+
+    center_id:
+        label: Center
+        commentAbove: Center
+        type: dropdown
