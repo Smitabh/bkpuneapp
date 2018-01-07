@@ -56,7 +56,7 @@ current directory clone this repo by command
 
 copy the content of bkpuneapp/Backend folder in following path
 
-octobercms's  ** "plugin/Iocare/BkpuneWebservice" ** path
+octobercms's  **"plugin/Iocare/BkpuneWebservice"** path
 
 i.e D:\xampp\htdocs\bkpune\service\plugin\iocare\bkpunewebservice
 
