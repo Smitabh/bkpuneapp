@@ -1,14 +1,14 @@
 # bkpuneapp
-Brahmakumaris Pune Mobile Application Server Component
-Webservice written in PHP Octobercms
+## Brahmakumaris Pune Mobile Application Server Component
+### Web Service written in PHP Octobercms
 
-Steps for setting up enviornment.
+**Steps for setting up environment.**
 
-Make sure you have Server enviornment localy (LAMP, XAMP, WAMP) with PHP 7+
+Make sure you have Server environment locally **(LAMP, XAMP, WAMP) with PHP 7+**
 
-its better if you have Git and Composer already installed on local machine 
+its better if you have [GIT](http://git-scm.com/downloads) and [Composer](https://getcomposer.org/Composer-Setup.exe)already installed on local machine 
 
-Step one :
+**Step one :**
 In your server root create some folder e.g. bkpune
 Run following command in terminal/cmd
 
