@@ -12,7 +12,7 @@ its better if you have [GIT](http://git-scm.com/downloads) and [Composer](https:
 
 In your server root create some folder e.g. bkpune
 
-Folder Structructure local can be as follows:
+Folder Structructure at you local machine can be as follows:
 
 If Your Server is at D:\xampp\htdocs\
 then create folder bkpune in it
@@ -41,9 +41,7 @@ in commandline
 
 **Step Three :**
 
-Open http://localhost/bkpune in browser and complete rest of the installation steps.
-
-
+Open http://localhost/bkpune/service in browser and complete rest of the installation steps.
 
 
 **Step Four :**
